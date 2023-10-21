@@ -11,7 +11,7 @@ This project is created with HTML, HTML5, CSS, CSS3 and JavaScript. It is an exa
 
 <h2>Project Gif</h2>
 
-![]()
+![](cinema.gif)
 
 You can see the project from this link: 
 

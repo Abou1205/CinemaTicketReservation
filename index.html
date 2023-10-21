@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Ticket Reservation</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <!-- style css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- screen and seat -->
+    <div class="container">
+        <!-- screen -->
+        <div class="screen">
+            <img id="moviePoster" src="screen.jpg" alt="">
+        </div>
+
+    <!-- seats -->
+        <!-- first row -->
+        <div class="seatRow">
+            <div class="seat reserved"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+        </div>
+        <!-- first row -->
+        
+        <!-- second row -->
+        <div class="seatRow">
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+        </div>
+        <!-- second row -->
+
+        <!-- third row -->
+        <div class="seatRow">
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+        </div>
+        <!-- third row -->
+
+        <!-- fourth row -->
+        <div class="seatRow">
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+
+        </div>
+        <!-- fourth row -->
+
+        <!-- fifth row -->
+        <div class="seatRow">
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+
+        </div>
+        <!-- fifth row -->
+
+    </div>
+    <!-- screen and seat -->
+
+    <!-- movie select bar -->
+    <div class="movie-list">
+        <select id="movie">
+            <option disabled>Choose Movie</option>
+            <option value="100">Oppenheimer</option>
+            <option value="200">Barbie</option>
+            <option value="300">About Dry Grasses</option>
+        </select>
+    </div>
+    <!-- movie select bar -->
+
+    <!-- info -->
+    <ul class="info">
+        <li>
+            <div class="seat reserved"><i class="fa-solid fa-couch"></i></div>
+            <span>Reserved Seat</span>
+        </li>
+        <li>
+            <div class="seat selected"><i class="fa-solid fa-couch"></i></div>
+            <span>Selected Seat</span>
+        </li>
+        <li>
+            <div class="seat"><i class="fa-solid fa-couch"></i></div>
+            <span>Empty Seat</span>
+        </li>
+
+    </ul>
+    <!-- info -->
+
+    <p class="infoText">
+        For <span id="count"></span> seats calculated price is <span id="amount"></span> TL 
+    </p>
+
+    <button class="button-30" id="resetButton">Reset All</button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
